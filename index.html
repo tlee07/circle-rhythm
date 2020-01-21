@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+
+    
+   
+    
+    <div class="boxholder">
+         <!-- animation1 -->
+        <div class="nav" id="topnav">
+            <div class="text" id="texttop"></div>
+        </div>
+
+        <div class="nav" id="leftnav">
+            <div class="text" id="textleft"></div>
+        </div>
+
+        <div class="nav" id="rightnav">
+            <div class="text" id="textright"></div>
+        </div>
+        <div class="nav" id="topleftcorner"></div>
+        <div class="nav" id="toprightcorner"></div>
+        <div class="box" id="box11" >
+            <div class="insert" id="insert11" onclick="circleani11()">START </div>
+            <div class="circle" id="circle11">
+            </div>
+        </div>
+
+        <div class="box" id="box12" onclick="circleani11()">
+            <div class="circle" id="circle12">
+            </div>
+        </div>
+
+
+        <div class="box" id="box21" onclick="circleani11()">
+            <div class="circle" id="circle21">
+            </div>
+        </div>
+
+        <div class="box" id="box22" onclick="circleani11()">
+            <div class="circle" id="circle22">
+            </div>
+        </div>
+
+         <!-- animation2 -->
+        <div class="box" id="box13" onclick="circleani13()">
+            <div class="insert" id="insert13" >START</div>
+            <div class="circle" id="circle13" >
+            </div>
+        </div>
+
+        <div class="box" id="box14" onclick="circleani13()">
+            <div class="circle" id="circle14">
+            </div>
+        </div>
+
+        <div class="box" id="box23" onclick="circleani13()">
+            <div class="circle" id="circle23">
+            </div>
+        </div>
+
+        <div class="box" id="box24" onclick="circleani13()">
+            <div class="circle" id="circle24">
+            </div>
+        </div>
+
+        <!-- animation3 -->
+        <div class="box" id="box31">
+            <div class="insert" id="insert31" onclick="circleani31()">START</div>
+            <div class="circle" id="circle31">
+            </div>
+        </div>
+
+        <div class="box" id="box32" onclick="circleani31()">
+            <div class="circle" id="circle32">
+            </div>
+        </div>
+
+
+        <div class="box" id="box41" onclick="circleani31()">
+            <div class="circle" id="circle41">
+            </div>
+        </div>
+
+        <div class="box" id="box42" onclick="circleani31()">
+            <div class="circle" id="circle42">
+            </div>
+        </div>
+
+
+        <!-- animation4 -->
+        <div class="box" id="box33">
+            <div class="insert" id="insert33" onclick="circleani33()">START</div>
+            <div class="circle" id="circle33">
+            </div>
+        </div>
+
+        <div class="box" id="box34" onclick="circleani33()">
+            <div class="circle" id="circle34">
+            </div>
+        </div>
+
+
+        <div class="box" id="box43" onclick="circleani33()">
+            <div class="circle" id="circle43">
+            </div>
+        </div>
+
+        <div class="box" id="box44" onclick="circleani33()">
+            <div class="circle" id="circle44">
+            </div>
+        </div>
+
+        <div class="nav" id="bottomnav">
+            <div class="text" id="textbottom">
+            </div>
+        </div>
+        <div class="nav" id="bottomrightcornernav"></div>
+        <div class="nav" id="bottomleftcornernav"></div>
+        <!-- <div class="nav" id="bottomnav">sofjslk</div> -->
+
+
+    </div>
+
+    
+
+
+    <script>
+        function circleani11() {
+          var circle11 = document.getElementById("circle11");
+          var circle12 = document.getElementById("circle12");
+          var circle21 = document.getElementById("circle21");
+          var circle22 = document.getElementById("circle22");
+          var insert = document.getElementById("insert11");
+          circle11.classList.toggle("ani11");
+          circle12.classList.toggle("ani11");
+          circle21.classList.toggle("ani11");
+          circle22.classList.toggle("ani11");
+          insert.classList.toggle("fade");
+        }
+
+
+
+
+        function circleani13() {
+        var circle13 = document.getElementById("circle13");
+        var circle14 = document.getElementById("circle14");
+        var circle23 = document.getElementById("circle23");
+        var circle24 = document.getElementById("circle24");
+        var insert = document.getElementById("insert13");
+        circle13.classList.toggle("ani13");
+        circle14.classList.toggle("ani13");
+        circle23.classList.toggle("ani13");
+        circle24.classList.toggle("ani13");
+        insert.classList.toggle("fade");
+
+        }
+
+
+        function circleani31() {
+        var circle31 = document.getElementById("circle31");
+        var circle32 = document.getElementById("circle32");
+        var circle41 = document.getElementById("circle41");
+        var circle42 = document.getElementById("circle42");
+        var insert = document.getElementById("insert31");
+        circle31.classList.toggle("circle31move");
+        circle32.classList.toggle("circle32move");
+        circle41.classList.toggle("circle41move");
+        circle42.classList.toggle("circle42move");
+        insert.classList.toggle("fade");
+
+        }
+
+        function circleani33() {
+        var circle33 = document.getElementById("circle33");
+        var circle34 = document.getElementById("circle34");
+        var circle43 = document.getElementById("circle43");
+        var circle44 = document.getElementById("circle44");
+        var insert = document.getElementById("insert33");
+        circle33.classList.toggle("circle33move");
+        circle34.classList.toggle("circle34move");
+        circle43.classList.toggle("circle43move");
+        circle44.classList.toggle("circle44move");
+        insert.classList.toggle("fade");
+
+        }
+
+
+    </script>
+
+
+
+
+
+    
+
+
+       
+       
+
+</body>
+</html>
